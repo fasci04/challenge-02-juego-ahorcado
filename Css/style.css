@@ -1,0 +1,102 @@
+html{
+	height: 100%;
+}
+
+body{ 
+	height: 100%;
+	background: #F3F5FC;
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+header{
+	width: 100%;
+	height: 7%;
+}
+
+h1{
+	height: 40%;
+	padding-top: 10px;
+}
+
+main{
+    width: 100%;
+	height: 86%;
+    
+}
+.menu_inicial{
+    height: 100%;
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.iniciar{
+	width: 317px;
+	height: 114px;
+	margin-bottom: 10px;
+	background: #0A3871;
+	color: #F3F5FC;
+	size: 18px;
+	border-radius: 24px;
+}
+
+.agrego{
+	width: 280px;
+	height: 67px;
+	margin-bottom: 10px;
+	background: #F3F5FC;
+	color: #0A3871;
+	size: 16px;
+	border-radius: 24px;
+	border-color: #0A3871;
+}
+
+
+
+.invisible{
+	display: none;
+}
+
+.disable {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+#divfin-de-juego{
+	font-size: 50px;
+	position: absolute;
+	z-index: 100; 
+	top: 50%;
+	left:50%; 
+}
+
+#botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-left: 5px;
+}
+
+#nuevo{
+	width: 159px;
+	height: 40px;
+	background: #0A3871;
+	color: #F3F5FC;
+	size: 16px;
+	border-radius: 10px;
+	margin-left: 5px;
+}
+
+#menu{
+	width: 159px;
+	height: 40px;
+	background: #F3F5FC;
+	color: #0A3871;
+	size: 16px;
+	border-radius: 10px;
+	margin-left: 5px;
+}
+

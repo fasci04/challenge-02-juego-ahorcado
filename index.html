@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ahorcado</title>
+        <link rel="stylesheet" href="Css/reset.css">
+        <link rel="stylesheet" href="Css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1><img src="imagenes/Logo.png"></h1>
+        </header>
+
+        <main> 
+            <div id="menu-inicial" class="menu_inicial ">
+                <button id="inicio" class="iniciar">Iniciar juego</button>
+                <button id="agregar" class="agrego">Agregar nueva palabras</button>
+            </div>
+            
+            <div id="div-aparece-ahorcado" class="canvas invisible">
+                <canvas id="horca" height="760px" width="1200px"></canvas>
+                <div id="botones" >
+                    <button id="nuevo" class="nuevo">Nuevo Juego</button>
+                    <button id="menu" class="agreg">Menu Principal</button>
+                </div>
+            </div>
+            
+            <div id="divfin-de-juego" >
+                    <p id="fin-de-juego"></p>
+                    <p id="mostrar-palabra"></p>
+                
+            </div>
+
+            <div id="agregar-palabras" class="invisible">
+                <div id="botones" class="menu_inicial ">
+                    <input type="text" id="nueva-palabra" placeholder="Ingrese palabra">
+                
+                    <button id="guardar" class="nuevo">Guardar</button>
+                    <button id="cancela" class="agreg">Cancelar</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+
+
+        </footer>
+
+        
+    </body>
+    <script src="js/script.js"></script>
+    <script src="JS/cambio-de.pantalla.js"></script>
+    <script src="js/fin-juego.js"></script>
+    <script src="js/reset.js"></script>
+    <script src="js/dibujo-horca.js"></script>
+    <script src="JS/agregar-palabra.js"></script>
+
+</html>
+
