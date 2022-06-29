@@ -13,7 +13,6 @@ function escogerPalabraSecreta(){
     var palabra = palabras[Math.floor(Math.random()*palabras.length)];
     palabraSecreta = palabra;
     cantLetras = palabraSecreta.length;
-    //console.log(palabra);
     return palabraSecreta;
 }
 
@@ -45,10 +44,7 @@ function escribirLetraCorrecta(index){
 
     var ancho = 600/palabraSecreta.length;
     tablero.fillText(palabraSecreta[index], 505+(ancho*index),620)
-    cantAciertos ++;
-    //console.log("adivinar " + cantLetras);
-    //console.log("aciertos " + cantAciertos);
-    
+    cantAciertos ++;    
 }
 
 function escribirLetraIncorrecta(letra,errorsLeft){
@@ -63,7 +59,6 @@ function escribirLetraIncorrecta(letra,errorsLeft){
 
 function verificarLetraCliqueada(key){
     if (key.charCodeAt(0)===192 || (key.charCodeAt(0)>=97) && (key.charCodeAt(0)<=122))  {
-        //console.log(key)
         if (letras.length <1 || letras.indexOf(key)<0){
             letras.push(key);
             
@@ -78,7 +73,6 @@ function verificarLetraCliqueada(key){
 
 function adicionaLetraCorrecta(i){
     palabraCorrecta += palabraSecreta[i].toUpperCase()
-    //console.log(palabraCorrecta);
 }
 
 function adicionarLetraIncorrecta(letter){
